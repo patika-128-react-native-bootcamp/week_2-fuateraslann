@@ -1,0 +1,60 @@
+# OSX
+#
+./hw2/DS_Store
+
+# Xcode
+#
+./hw2/build/
+./hw2/*.pbxuser
+./hw2/!default.pbxuser
+./hw2/*.mode1v3
+./hw2/!default.mode1v3
+./hw2/*.mode2v3
+./hw2/!default.mode2v3
+./hw2/*.perspectivev3
+./hw2/!default.perspectivev3
+./hw2/xcuserdata
+./hw2/*.xccheckout
+./hw2/*.moved-aside
+./hw2/DerivedData
+./hw2/*.hmap
+./hw2/*.ipa
+./hw2/*.xcuserstate
+
+# Android/IntelliJ
+#
+./hw2/build/
+./hw2/.idea
+./hw2/.gradle
+./hw2/local.properties
+./hw2/*.iml
+./hw2/*.hprof
+
+# node.js
+#
+./hw2/node_modules/
+./hw2/npm-debug.log
+./hw2/yarn-error.log
+
+# BUCK
+./hw2/buck-out/
+./hw2/\.buckd/
+./hw2/*.keystore
+./hw2/!debug.keystore
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+./hw2/*/fastlane/report.xml
+./hw2/*/fastlane/Preview.html
+./hw2/*/fastlane/screenshots
+
+# Bundle artifact
+./hw2/*.jsbundle
+
+# CocoaPods
+./hw2//ios/Pods/
