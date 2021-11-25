@@ -9,7 +9,7 @@ const App = () => {
    const [productList , setProductList] = useState([{}])
    return (<SafeAreaView>
        <View>
-           <Text>Hello Baba </Text>
+           <Text>Hello </Text>
            
 
           
