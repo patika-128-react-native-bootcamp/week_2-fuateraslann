@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView,View,Text, StyleSheet} from 'react-native';
+import {Button,SafeAreaView,View,Text, StyleSheet} from 'react-native';
 import { useState } from 'react';
 
 import Inputs from './components/Inputs/Inputs';
@@ -7,15 +7,16 @@ import ProductCard from './components/Products/ProductCard';
 
 const App = () => {
    const [productList , setProductList] = useState([{}])
+   function handleClick(){
+       console.log('a')
+   }
    return (<SafeAreaView>
        <View>
            <Text>Hello </Text>
            
-
-          
        </View>
        <ProductCard />
-       <Inputs sendProduct = {products =>setProductList(products)} />
+       <Button title = "x" onPress = {handleClick}/>
    </SafeAreaView>) 
 
 }

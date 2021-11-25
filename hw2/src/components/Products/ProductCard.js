@@ -2,10 +2,10 @@ import React from 'react'
 import { useState , useEffect } from 'react'
 import { SafeAreaView,Text ,View} from 'react-native'
 import styles from './ProductCard.style'
+import Inputs from '../Inputs/Inputs';
 export default function ProductCard() {
     
     const [productList , setProductList] = useState([{name : "araba" , price : 5},{name : "araba" , price : 5}])
-   
    
     return (
         <SafeAreaView >
@@ -15,6 +15,7 @@ export default function ProductCard() {
                     <Text style = {styles.price}>{product.price + 'TL'}</Text>
                 </View>
                 )})}
+                <Inputs sendProduct = {products =>setProductList([...productList , products])} />
         </SafeAreaView>
     )
 }
