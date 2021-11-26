@@ -1,11 +1,14 @@
 import React from 'react'
-import { Button, SafeAreaView  , Text} from 'react-native'
-
-export default function AddButton() {
+import { TouchableOpacity, SafeAreaView  , Text} from 'react-native'
+import styles from './AddButton.style'
+export default function AddButton({onPress}) {
     return (
-        <SafeAreaView>
-            <Button title = "Add"/>
+        <SafeAreaView style = {styles.container}>
+            <TouchableOpacity onPress={onPress} >
+                <Text style = {styles.addButton}>Add</Text>
+            </TouchableOpacity>
         </SafeAreaView>
         
     )
 }
+

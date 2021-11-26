@@ -10,13 +10,10 @@ const App = () => {
    function handleClick(){
        console.log('a')
    }
-   return (<SafeAreaView>
-       <View>
-           <Text>Hello </Text>
-           
-       </View>
+   return (<SafeAreaView style = {styles.container}>
+       
        <ProductCard />
-       <Button title = "x" onPress = {handleClick}/>
+       
    </SafeAreaView>) 
 
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { SafeAreaView, TextInput ,Text, Button} from 'react-native'
+import { SafeAreaView, TextInput ,Text} from 'react-native'
 import { useState , useEffect } from 'react'
 import styles from './Inputs.style'
 import AddButton from '../Buttons/AddButton'
@@ -22,7 +22,8 @@ export default function Inputs({sendProduct}) {
                 Price:
             </Text>
             <TextInput style = {styles.inputs} onChangeText = {setPrice}/>
-            <Button title = "Add" onPress = {handleSendProduct}/>
+            
+            <AddButton style={styles.addButton} title = "Add" onPress = {handleSendProduct}/>
         </SafeAreaView>
     )
 }
