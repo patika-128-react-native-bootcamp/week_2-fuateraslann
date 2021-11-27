@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button,SafeAreaView,View,Text, StyleSheet} from 'react-native';
+import {Button,SafeAreaView,View,Text, StyleSheet, ScrollView} from 'react-native';
 import { useState } from 'react';
 
 import Inputs from './components/Inputs/Inputs';
@@ -7,14 +7,11 @@ import ProductCard from './components/Products/ProductCard';
 import Badges from './components/Badge/Badges';
 
 const App = () => {
-   const [productList , setProductList] = useState([{}])
-   function handleBadgeChange(badge){
-       console.log(badge)
-   }
+   const [badge , setBadge] = useState("")
+
    return (<SafeAreaView style = {styles.container}>
-       <Badges changeBadge = {badge => handleBadgeChange(badge)}/>
-       <ProductCard />
-       
+       <Badges changeBadge = {setBadge}/>
+       <ProductCard badge = {badge}/>
    </SafeAreaView>) 
 
 }
